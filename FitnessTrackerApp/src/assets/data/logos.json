@@ -1,0 +1,34 @@
+[
+    {
+        "icon" : "logo-playstation",
+        "name" : "playstation",
+        "redirectTo": "https://www.playstation.com"
+    },
+    {
+        "icon" : "logo-microsoft",
+        "name" : "microsoft",
+        "redirectTo": "https://www.microsoft.com"
+    },
+    {
+        "icon" : "logo-apple",
+        "name" : "apple",
+        "redirectTo": "https://www.apple.com"
+    },
+    {
+        "icon" : "logo-tiktok",
+        "name" : "tiktok",
+        "redirectTo": "https://www.tiktok.com"
+    },
+    {
+        "icon" : "logo-amazon",
+        "name" : "amazon",
+        "redirectTo": "https://www.amazon.com"
+    },
+    {
+        "icon" : "fa-brands fa-algolia",
+        "name" : "argolia",
+        "redirectTo": "https://www.amazon.com",
+        "by": "fa"
+
+    }
+]

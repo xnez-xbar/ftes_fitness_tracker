@@ -1,0 +1,13 @@
+[
+    {
+        "title" : "Dashboard",
+        "icon" : "home-outline",
+        "submenu": [
+            {"title": "Dashboard", "url": "/dashboard"},
+            {"title": "About", "url": "/dashboard/about"},
+            {"title": "Account Settings", "url": "/dashboard/account-settings"}
+        ],  
+        "redirectTo": "/dashboard",
+        "visible": true
+    }
+]

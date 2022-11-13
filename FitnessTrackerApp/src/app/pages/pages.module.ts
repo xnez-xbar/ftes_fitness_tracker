@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { PagesComponent } from './pages.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -12,12 +13,14 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     DashboardComponent,
     AboutComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,
     AboutComponent,
-    PagesComponent
+    PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,

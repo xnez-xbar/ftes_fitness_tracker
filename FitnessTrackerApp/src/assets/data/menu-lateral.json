@@ -1,0 +1,83 @@
+[
+    {
+        "id" : 0,
+        "title" : "frutos secos",
+        "icon" : "star-outline",
+        "redirectTo": "/pagina-uno",
+        "visible": true,
+        "src": "https://images.ecestaticos.com/CuMpV9KTHGWz-HH0KG1SZoQb9GA=/0x110:2119x1300/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fbef%2Fe7a%2Fc66%2Fbefe7ac66501753b6524e29e7d896e0b.jpg"
+
+    },
+    {
+        "id" : 1,
+        "title" : "tragos",
+        "icon" : "star-outline",
+        "redirectTo": "/pagina-uno",
+        "visible": true,
+        "src": "https://www.simple-life.com/wp-content/uploads/New-Banner.jpg"
+    },
+    {
+        "id" : 1,
+        "title" : "botilleria ambulante",
+        "icon" : "mail-outline",
+        "redirectTo": "/inicio",
+        "visible": false
+    },
+    {
+        "id" : 2,
+        "title" : "parafernalia fumeta",
+        "icon" : "mail-outline",
+        "redirectTo": "/inicio",
+        "visible": false
+    },
+    {
+        "id" : 3,
+        "title" : "trueque",
+        "icon" : "mail-outline",
+        "redirectTo": "/contacto",
+        "visible": false
+    },
+    {
+        "id" : 4,
+        "title" : "el jardinero",
+        "icon" : "mail-outline",
+        "redirectTo": "/inicio",
+        "visible": false
+    },
+    {
+        "id" : 5,
+        "title" : "el artesano",
+        "icon" : "mail-outline",
+        "redirectTo": "/contacto",
+        "visible": false
+        
+    },
+    {
+        "id" : 6,
+        "title" : "el pescador",
+        "icon" : "mail-outline",
+        "redirectTo": "/inicio",
+        "visible": false
+    },
+    {
+        "id" : 7,
+        "title" : "el apicultor",
+        "icon" : "mail-outline",
+        "redirectTo": "/inicio",
+        "visible": false
+    },
+    {
+        "id" : 8,
+        "title" : "el tabaquero",
+        "icon" : "mail-outline",
+        "redirectTo": "/inicio",
+        "visible": false
+    },
+    {
+        "id" : 9,
+        "title" : "el soldador",
+        "icon" : "mail-outline",
+        "redirectTo": "/inicio",
+        "visible": false
+    }
+]
