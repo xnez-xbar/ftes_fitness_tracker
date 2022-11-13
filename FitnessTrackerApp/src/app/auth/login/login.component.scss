@@ -1,0 +1,23 @@
+ion-item {
+    --padding-end: 0px;
+    --padding-start: 0px;
+    --inner-padding-end: 0px;
+    // here other custom CSS from documentation
+  }
+
+  .center {
+   
+    width: 100%;
+  }
+
+  .centerLogin {
+    width: 500px;
+    margin: auto
+  }
+
+
+.divcenter {
+    display: flex;
+    margin: 0 auto; 
+    align-self: center;
+}

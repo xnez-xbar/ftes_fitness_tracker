@@ -1,3 +1,84 @@
-<p>
-  login works!
-</p>
+<ion-row class="ion-no-padding">
+  <ion-col class="ion-no-padding" size="7">
+
+  </ion-col>
+
+  <ion-col class="ion-no-padding" size="5">
+
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      <ion-card-header>
+        <ion-card-title>Fitness Tracker</ion-card-title>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+      </ion-card-header>
+    
+      <ion-card-content>
+        <form id="loginform"
+              (submit)="login()">
+          
+          <ion-list>
+
+            <ion-item>
+              <ion-label position="floating">Usuario</ion-label>
+              <ion-input class="form-control" 
+                         required="" 
+                         type="text" 
+                         placeholder="Enter text"></ion-input>
+              <ion-note slot="helper">Enter a valid email</ion-note>
+
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input class="form-control" 
+                         required="" 
+                         type="password" 
+                         placeholder="Enter text"></ion-input>
+              <ion-note slot="helper">Enter a valid email</ion-note>
+
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label slot="end">
+                <a href="forgot-password">
+                  ¿Olvidaste tu cuenta?
+                </a>
+              </ion-label>
+            </ion-item>
+            
+            <ion-item lines="none">
+              <ion-button type="submit" class="center" size="large" shape="round">Iniciar Sesión</ion-button>
+            </ion-item>
+
+            <ion-item lines="none">
+              <div class="divcenter">
+                <ion-button>
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </ion-button>
+                <ion-button color="danger">
+                  <ion-icon name="logo-google"></ion-icon>
+                </ion-button>
+              </div> 
+            </ion-item>
+
+            <ion-item lines="none">
+              <div class="divcenter">
+                <ion-label> ¿No tienes una cuenta? 
+                    <a href="register">Registrate
+                  </a>
+                </ion-label>
+              </div>
+            </ion-item>
+            
+          </ion-list>
+
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+    
+
+
+
+  </ion-col>
+</ion-row>
