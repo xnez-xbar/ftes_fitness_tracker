@@ -1,3 +1,101 @@
-<p>
-  register works!
-</p>
+<ion-row class="ion-no-padding">
+  <ion-col class="ion-no-padding" size="7">
+
+  </ion-col>
+
+  <ion-col class="ion-no-padding" size="5">
+
+    <ion-card>
+      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+      <ion-card-header>
+        <ion-card-title>Fitness Tracker</ion-card-title>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+      </ion-card-header>
+
+      <ion-card-content>
+        <form autocomplete="off"
+              [formGroup]="registerForm"
+              (ngSubmit)="crearUsuario()">
+
+          <ion-list>
+
+            <ion-item>
+              <ion-label position="floating">Nombre</ion-label>
+
+              <ion-input class="form-control"
+                         type="text"
+                         placeholder="nombre"
+                         ngDefaultControl
+                         formControlName="nombre">
+              </ion-input>
+
+              <ion-note *ngIf="campoNoValido('nombre')" slot="helper" color="danger">Enter a valid nombre</ion-note>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              
+              <ion-input class="form-control"
+                         type="text"
+                         placeholder="Email"
+                         ngDefaultControl
+                         formControlName="email"></ion-input>
+
+              <ion-note *ngIf="campoNoValido('email')" slot="helper" color="danger">Enter a valid email</ion-note>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Contraseña</ion-label>
+
+              <ion-input class="form-control"
+                         type="password"
+                         placeholder="Contraseña"
+                         ngDefaultControl
+                         formControlName="password"></ion-input>
+
+              <ion-note *ngIf="contrasenasNoValidas()" color="danger" slot="helper">Las contraseñas deben ser iguales</ion-note>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Confirmar contraseña</ion-label>
+
+              <ion-input class="form-control"
+                         type="password"
+                         placeholder="Confirmar contraseña"
+                         ngDefaultControl
+                         formControlName="passwordTwo"></ion-input>
+
+              <ion-note *ngIf="contrasenasNoValidas()" color="danger" slot="helper">Las contraseñas deben ser iguales</ion-note>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-toggle class="form-control"
+                          ngDefaultControl
+                          formControlName="terminos"
+                          (click)="switch()">
+              </ion-toggle>
+
+              <ion-label>Términos</ion-label>
+              <ion-note *ngIf="!aceptaTerminos()" color="danger" slot="helper">Debe aceptar los terminos</ion-note>
+            </ion-item>
+            
+
+            <ion-item lines="none" class="ion-padding">
+              <ion-button type="submit" class="center" size="large" shape="round">Registrarse</ion-button>
+            </ion-item>
+
+
+            <ion-item lines="none">
+              <p>Already have an account</p> <a routerLink="/login">Sign In</a>
+            </ion-item>
+
+
+
+          </ion-list>
+
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+
+
+
+
+  </ion-col>
+</ion-row>

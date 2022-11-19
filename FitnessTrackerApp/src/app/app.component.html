@@ -13,7 +13,9 @@
             <ion-label> {{m.title}} </ion-label>
           </ion-item>
           <div *ngFor="let sm of m.submenu" slot="content">
-            <ion-item [routerLink]="sm.url" slot="header" color="light">
+            <ion-item [routerLink]="sm.url" 
+                      slot="header" 
+                      color="light">
               <ion-label> {{sm.title}} </ion-label>
             </ion-item>
           </div>

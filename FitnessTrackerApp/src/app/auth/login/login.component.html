@@ -13,29 +13,43 @@
       </ion-card-header>
     
       <ion-card-content>
-        <form id="loginform"
-              (submit)="login()">
+        <form autocomplete="off"
+              [formGroup]="loginForm"
+              (ngSubmit)="login()">
           
           <ion-list>
 
             <ion-item>
               <ion-label position="floating">Usuario</ion-label>
-              <ion-input class="form-control" 
-                         required="" 
-                         type="text" 
-                         placeholder="Enter text"></ion-input>
+              
+              <ion-input class="form-control"
+                         type="email" 
+                         placeholder="Email"
+                         ngDefaultControl
+                         formControlName="email"></ion-input>
+
               <ion-note slot="helper">Enter a valid email</ion-note>
 
             </ion-item>
 
             <ion-item>
               <ion-label position="floating">Contraseña</ion-label>
-              <ion-input class="form-control" 
-                         required="" 
+              <ion-input class="form-control"
                          type="password" 
-                         placeholder="Enter text"></ion-input>
-              <ion-note slot="helper">Enter a valid email</ion-note>
+                         placeholder="Contraseña"
+                         ngDefaultControl
+                         formControlName="password"></ion-input>
+              <ion-note slot="helper">Enter a valid contraseña</ion-note>
 
+            </ion-item>
+            <ion-item lines="none">
+              <ion-toggle class="form-control"
+                          ngDefaultControl
+                          formControlName="remember"
+                          (click)="switch()">
+              </ion-toggle>
+
+              <ion-label>Recordarme</ion-label>
             </ion-item>
 
             <ion-item lines="none">
@@ -64,7 +78,7 @@
             <ion-item lines="none">
               <div class="divcenter">
                 <ion-label> ¿No tienes una cuenta? 
-                    <a href="register">Registrate
+                    <a routerLink="/register">Registrate
                   </a>
                 </ion-label>
               </div>
